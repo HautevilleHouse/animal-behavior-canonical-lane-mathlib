@@ -1,0 +1,19 @@
+import AnimalBehaviorCanonicalLaneLean.BridgeLemmas
+import AnimalBehaviorCanonicalLaneLean.GateLemmas
+import AnimalBehaviorCanonicalLaneLean.FinalTheorem
+import AnimalBehaviorCanonicalLaneLean.ForagingBehavior
+import AnimalBehaviorCanonicalLaneLean.SocialLearning
+import AnimalBehaviorCanonicalLaneLean.MatingSystems
+import AnimalBehaviorCanonicalLaneLean.CommunicationSignals
+import AnimalBehaviorCanonicalLaneLean.KinshipAltruism
+
+namespace HautevilleHouse
+namespace AnimalBehaviorCanonicalLaneLean
+
+-- Root module for the Animal Behavior Canonical Lane Lean package.
+-- This module imports all domain-specific packages and final theorem.
+
+def packageName : String := "AnimalBehaviorCanonicalLaneLean"
+
+end AnimalBehaviorCanonicalLaneLean
+end HautevilleHouse

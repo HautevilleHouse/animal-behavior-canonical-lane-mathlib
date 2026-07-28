@@ -1,0 +1,19 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.AnimalBehaviorCanonicalLaneLean.EthogramPackage
+import HautevilleHouse.AnimalBehaviorCanonicalLaneLean.ForagingTheoryPackage
+import HautevilleHouse.AnimalBehaviorCanonicalLaneLean.LearningPlasticityPackage
+import HautevilleHouse.AnimalBehaviorCanonicalLaneLean.SocialBehaviorPackage
+import HautevilleHouse.AnimalBehaviorCanonicalLaneLean.BehavioralEndocrinologyPackage
+import HautevilleHouse.AnimalBehaviorCanonicalLaneLean.PhylogeneticComparativePackage
+
+namespace HautevilleHouse
+namespace AnimalBehaviorCanonicalLaneLean
+
+def ConstrainedAnimalBehaviorClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_animal_behavior_endgame (A : AdmissibleClass) : ConstrainedAnimalBehaviorClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end AnimalBehaviorCanonicalLaneLean
+end HautevilleHouse
